@@ -1,1 +1,0 @@
-console.log("Tuyet Thanh hoc bai 2")
