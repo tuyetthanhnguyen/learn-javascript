@@ -19,5 +19,3 @@ var age = 18;
 function showDialog() {
     alert('Hi xin chao cac ban!');
 }
-alert();
-showDialog();
