@@ -45,3 +45,19 @@ function sum(message, message2){
     console.log(message2);
 }
 sum('a', 'b');
+
+function sum(a,b){
+    return (a+b);
+}
+// return trong ham 
+function sum(a, b){
+    return[a, b];
+}
+var result = sum(2, 8);
+console.log(result);
+
+function sum(a, b) {
+    return (a+b);
+}
+var result =sum(20, 10);
+console.log(result);
