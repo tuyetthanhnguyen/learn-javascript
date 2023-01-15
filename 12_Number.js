@@ -35,7 +35,7 @@ numberObject.toFixed(6); // '1234.567890'
 */
 /* 
 Number in javascript
- 1. tạo giá trọ number
+ 1. tạo giá trị number
     -các cách tạo
     -dùng cách nào? tại sao?
     -kiểm tra data type
@@ -44,6 +44,7 @@ Number in javascript
     -toFixed
 
 */
+/*
 var age=18;
 var PI = 3.14;
 // var a = new a(9);
@@ -51,3 +52,18 @@ var PI = 3.14;
 var result = 20 / 'ABC';
 // console.log(result);
 console.log(isNaN(result));
+*/
+function isNumber(value){
+   if(isNaN(value)){
+       return false;
+   }
+   else{
+       return typeof value === 'number';
+   }
+}
+
+
+// Expected results:
+console.log(isNumber(999)); // true
+console.log(isNumber('abc')); // false
+console.log(isNumber('100')); // false
