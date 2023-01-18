@@ -8,18 +8,18 @@
     lấy phần tử index
 */
 // cach 1 thuong dung
-var languages = [
-    'Javascript',
-    'php',
-    'ruby',
-    'dart',
-    null,
-    undefined,
-    function () {
+// var languages = [
+//     'Javascript',
+//     'php',
+//     'ruby',
+//     'dart',
+//     null,
+//     undefined,
+//     function () {
 
-    },
-    {}
-];
+//     },
+//     {}
+// ];
 // console.log(languages)
 // console.log(Array.isArray(new Array(1,2)));
 // console.log(languages.length)
@@ -82,12 +82,105 @@ var a = new Array(
 
 // in last element
 
-function getLastElement(array){
-    return array.slice(-1)  //(0, 1) first element
-}
+// function getLastElement(array){
+//     return array.slice(-1)  //(0, 1) first element
+// }
 
-var animals = ['Monkey', 'Tiger', 'Elephant'];
-var result = getLastElement(animals);
+// var animals = ['Monkey', 'Tiger', 'Elephant'];
+// var result = getLastElement(animals);
 
-console.log(result); // Expected: "Elephant"
-console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+// console.log(result); // Expected: "Elephant"
+// console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+
+
+//---------------------------------------------------
+// làm việc với mảng
+/*
+Array method:
+
+
+*/
+// function giaiThua(number){
+//     if(number >0){
+//         return number * giaiThua(number - 1);
+//     }
+//     return 1;
+// }
+// console.log(giaiThua(6))
+
+
+var courses = [
+    {
+        id: 1,
+        name: 'Javascript',
+        coin: 250
+    },
+    {
+        id: 2,
+        name: 'HTML, CSS',
+        coin: 0
+    },
+    {
+        id: 3,
+        name: 'Ruby',
+        coin: 0
+    },
+    {
+        id: 4,
+        name: 'PHP',
+        coin: 0
+    },
+    {
+        id: 5,
+        name: 'ReactJS',
+        coin: 0
+    }
+];
+ //   forEach()
+// courses.forEach(function(course, index){
+//     console.log(course)
+// })
+
+//    every() =>boolean
+// var isFree = courses.every(function(course, index){
+//     // console.log(index)
+//     return course.coin === 0
+// })
+// console.log(isFree)
+
+//    some()
+// var isFree = courses.some(function(course, index){
+//     // console.log(index)
+//     return course.coin === 0
+// })
+// console.log(isFree)
+
+    // find()
+    // var isFree = courses.find(function(course, index){
+    //     // console.log(index)
+    //     return course.coin === 0
+    // })
+    // console.log(isFree)
+
+    // filter()
+    // var isFree = courses.filter(function(course, index){
+    //     // console.log(index)
+    //     return course.coin === 0
+    // })
+    // console.log(isFree)
+
+    // map()
+    // var isFree = courses.map(function(course, index){
+    //     // console.log(index)
+    //     return course.coin === 0
+    // })
+    // console.log(isFree)
+
+    // reduce()
+    var isFree = courses.reduce(function(course, index){
+        // console.log(index)
+        return course.coin === 0
+    })
+    console.log(isFree)
+
+

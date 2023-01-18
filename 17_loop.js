@@ -180,6 +180,34 @@ var myNumberArray = [
 //         console.log(myNumberArray[i][j]);
 //     }
 // }
-var array = [1, 2, 3, 4, 1, 2, 3, 4, 22]
 
-console.log([...new Set(array)]);
+// var array = [1, 2, 3, 4, 1, 2, 3, 4, 22]
+// console.log([...new Set(array)]);
+//----------------------------------------------------
+// đệ quy 
+// xác định điểm dừng, logic handle => tại ra điểm dừng
+// function countdown(num){
+//     if(num>=0){
+//         console.log(num);
+
+//         return countdown(num-1);
+//     }
+//     return num;
+// }
+// countdown(10);
+
+// function loop(start, end, cb){
+//     if(start < end) {
+//         cb(start)
+//         return loop(start +1, end, cb);
+//     }
+// }
+
+// var array = ['JavaScript', 'PHP', 'Ruby']
+// loop(0, array.length - 1, function(index) {
+//         console.log('index: ', index);
+//         console.log(array[index]);
+//     });
+
+
+
